@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="my.hikandgo.xmlbuilderapp.view.Builder407Controller">
+   <children>
+      <Label layoutX="27.0" layoutY="159.0" prefHeight="224.0" prefWidth="255.0" style="-fx-border-color: black;" />
+      <Button layoutX="27.0" layoutY="91.0" mnemonicParsing="false" onAction="#folderChoise" prefHeight="36.0" prefWidth="91.0" text="Выбрать каталог">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+      <TextField fx:id="path" layoutX="132.0" layoutY="91.0" prefHeight="36.0" prefWidth="329.0" promptText="Выберите папку или введите абсолютный путь" />
+      <TextField fx:id="textLog" editable="false" layoutX="27.0" layoutY="35.0" prefHeight="36.0" prefWidth="435.0" promptText="Информационное окно">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Button layoutX="27.0" layoutY="401.0" mnemonicParsing="false" onAction="#handleInputPath" prefHeight="36.0" prefWidth="91.0" text="Выполнить">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="426.0" layoutY="401.0" mnemonicParsing="false" onAction="#handleInputPath" prefHeight="36.0" prefWidth="48.0" text="&lt;">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="DATE_MSG" layoutX="215.0" layoutY="204.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
+      <TextField fx:id="DATE_REQ" layoutX="215.0" layoutY="240.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
+      <TextField fx:id="DATE_GET_REQ" layoutX="215.0" layoutY="273.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
+      <TextField fx:id="DATE_ORDER" layoutX="215.0" layoutY="308.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
+      <TextField fx:id="DATE_PROLONG" layoutX="215.0" layoutY="347.0" prefHeight="25.0" prefWidth="54.0" promptText="0" />
+      <Label graphicTextGap="5.0" layoutX="42.0" layoutY="204.0" prefHeight="25.0" prefWidth="105.0" style="-fx-border-color: black;" text="&lt;ДатаСооб&gt;" textOverrun="WORD_ELLIPSIS" wrapText="true" />
+      <Label graphicTextGap="5.0" layoutX="42.0" layoutY="240.0" prefHeight="25.0" prefWidth="105.0" style="-fx-border-color: black;" text="&lt;ДатЗапр&gt;" textOverrun="WORD_ELLIPSIS" wrapText="true" />
+      <Label graphicTextGap="5.0" layoutX="42.0" layoutY="273.0" prefHeight="25.0" prefWidth="105.0" style="-fx-border-color: black;" text="&lt;ДатПолучЗапр&gt;" textOverrun="WORD_ELLIPSIS" wrapText="true" />
+      <Label graphicTextGap="5.0" layoutX="42.0" layoutY="308.0" prefHeight="25.0" prefWidth="105.0" style="-fx-border-color: black;" text="&lt;ДатПоручФил&gt;" textOverrun="WORD_ELLIPSIS" wrapText="true" />
+      <Label graphicTextGap="5.0" layoutX="42.0" layoutY="347.0" prefHeight="25.0" prefWidth="105.0" style="-fx-border-color: black;" text="&lt;ДатаПролонг&gt;" textOverrun="WORD_ELLIPSIS" wrapText="true" />
+      <ProgressBar fx:id="progressBar" layoutX="130.0" layoutY="401.0" prefHeight="36.0" prefWidth="281.0" progress="0.0" />
+      <Label alignment="BASELINE_CENTER" layoutX="27.0" layoutY="159.0" prefHeight="36.0" prefWidth="135.0" style="-fx-border-color: black;" text="Редактируемые теги" textOverrun="CLIP" />
+      <Label alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="159.0" prefHeight="36.0" prefWidth="120.0" style="-fx-border-color: black;" text="+- от тек. даты" textOverrun="CLIP" />
+   </children>
+</AnchorPane>
