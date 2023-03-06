@@ -1,14 +1,6 @@
-module my.hikandgo.xmlbuilderapp {
+module XMLBuilder {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
-
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires com.almasb.fxgl.all;
 
     opens my.hikandgo.xmlbuilderapp to javafx.fxml;
     opens my.hikandgo.xmlbuilderapp.view to javafx.fxml;
